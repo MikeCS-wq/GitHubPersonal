@@ -10,6 +10,7 @@ int main() {
     float Area1, Area2, PIB1, PIB2;
     float DensidadePopulacional1, DensidadePopulacional2, PIBperCapita1, PIBperCapita2;
     float SuperPoder1, SuperPoder2;
+    float ResultadoSuperPoder;
     unsigned long int ResultadoPopulacao;
     float ResultadoArea;
     float ResultadoPIB;
@@ -104,7 +105,7 @@ int main() {
     //comparação das cartas
 
     ResultadoPopulacao = Populacao1 >= Populacao2;
-    ResoltadoArea = Area1 >= Area2;
+    ResultadoArea = Area1 >= Area2;
     ResultadoPIB = PIB1 >= PIB2;
     ResultadoPontosTuristicos = NumeroDePontosTuristicos1 >= NumeroDePontosTuristicos2;
     ResultadoDensidadePopulacional = DensidadePopulacional1 <= DensidadePopulacional2;
@@ -112,12 +113,12 @@ int main() {
     ResultadoSuperPoder= SuperPoder1 >= SuperPoder2;
 
     printf("População: %lu \n", ResultadoPopulacao);
-    printf("Area: %f \n", ResultadoArea);
+    printf("Area: %.1f \n", ResultadoArea);
     printf("PIB: %f \n", ResultadoPIB);
-    printf("Pontos Turisticos: %d", ResultadoPontosTuristicos);
-    printf("Densidade Populacional: %f \n", ResultadoDensidadePopulacional);
-    printf("PIB per Capita: %f \n", ResultadoPIBPerCapita);
-    printf("Super Poder: %f \n", ResultadoSuperPoder);
+    printf("Pontos Turisticos: %d \n", ResultadoPontosTuristicos);
+    printf("Densidade Populacional: %.1f \n", ResultadoDensidadePopulacional);
+    printf("PIB per Capita: %.1f \n", ResultadoPIBPerCapita);
+    printf("Super Poder: %.1f \n", ResultadoSuperPoder);
 
 
     return 0;
