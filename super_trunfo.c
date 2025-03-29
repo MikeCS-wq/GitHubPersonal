@@ -17,7 +17,7 @@ int main() {
     int ResultadoPontosTuristicos;
     float ResultadoDensidadePopulacional;
     float ResultadoPIBPerCapita;
-
+    int opcao;
     // Entrada dos dados
     printf("Carta 1: \n");
 
@@ -104,17 +104,87 @@ int main() {
 
     //comparação das cartas
 
-    if (Populacao1 > Populacao2)
-    {   printf("Carta 1 venceu!\n");
-    }   else{ printf("Carta 2 venceu!\n");
-    }
+// escolha do atributo para comparação
+    printf("*** Super Trunfo ***\n");
+    printf("1. Super Poder\n");
+    printf("2. População\n");
+    printf("3. Área\n");
+    printf("4. PIB\n");
+    printf("5. Número de Pontos Turísticos\n");
+    printf("6. Densidade Populacional\n");
+    printf("7. PIB per Capita\n");
+    printf("Escolha o atributo a ser comparado:\n");
+    scanf("%d", &opcao);
 
-    if ("DensidadePopulacional1 < DensidadePopulacional2")
-    {   printf("Carta 1 venceu!\n");
-    }   else{printf("Carta 2 venceu!\n");
+    switch (opcao)
+    {
+    case 1:
+        if (opcao > SuperPoder2)
+        {   printf("Carta 1 venceu!\n");
+        } else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else { printf("Carta 2 venceu!");
+        }
+        break;
+    case 2:
+    if (opcao > Populacao2)
+        {   printf("Carta 1 venceu!\n");
+            else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else {printf("Carta 2 venceu!");
+        }
+        break;
+    case 3:
+        if (opcao > Area2)
+        {   printf("Carta 1 venceu!\n");
+            else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else {printf("Carta 2 venceu!");
+        }
+        break;
+    case 4:
+        if (opcao > PIB2)
+        {   printf("Carta 1 venceu!\n");
+            else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else {printf("Carta 2 venceu!");
+        }
+        break;
+    case 5:
+        if (opcao > NumeroDePontosTuristicos2)
+        {   printf("Carta 1 venceu!\n");
+            else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else {printf("Carta 2 venceu!");
+        }
+        break;
+    case 6:
+        if (opcao < DensidadePopulacional2)
+        {   printf("Carta 1 venceu!\n");
+            else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else {printf("Carta 2 venceu!");
+        }
+        break;
+    case 7:
+        if (opcao > PIBperCapita2)
+        {   printf("Carta 1 venceu!\n");
+            else if (opcao = SuperPoder2)
+        {
+            printf("Empatou!\n")
+        } else {printf("Carta 2 venceu!");
+        }
+        break;
+    default:
+        printf("Opção inválida\n");
+        break;
     }
-
-    
     
     
 
